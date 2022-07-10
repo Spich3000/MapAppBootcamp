@@ -51,7 +51,8 @@ extension LocationDetailView {
                 Image(imageName)
                     .resizable()
                     .scaledToFill()
-                    .frame(width: UIScreen.main.bounds.width)
+                // Check if we are on iPad
+                    .frame(width: UIDevice.current.userInterfaceIdiom == .pad ? nil : UIScreen.main.bounds.width)
                     .clipped()
             }
         }
@@ -112,6 +113,6 @@ extension LocationDetailView {
                 .shadow(radius: 4)
                 .padding()
         }
-
+        
     }
 }
