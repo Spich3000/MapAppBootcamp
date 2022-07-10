@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		A249A1C02876E3CD00DC0F9C /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A249A1BF2876E3CD00DC0F9C /* LocationsListView.swift */; };
 		A249A1C228773C7800DC0F9C /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A249A1C128773C7800DC0F9C /* LocationPreviewView.swift */; };
+		A249A1C4287B0D0E00DC0F9C /* LocationMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A249A1C3287B0D0E00DC0F9C /* LocationMapAnnotationView.swift */; };
 		A2B0E1212872E48C0049D122 /* MapAppBootcampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B0E1202872E48C0049D122 /* MapAppBootcampApp.swift */; };
-		A2B0E1232872E48C0049D122 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B0E1222872E48C0049D122 /* ContentView.swift */; };
 		A2B0E1282872E48E0049D122 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2B0E1272872E48E0049D122 /* Preview Assets.xcassets */; };
 		A2B0E12F2872E5330049D122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2B0E12E2872E5330049D122 /* Assets.xcassets */; };
 		A2B0E1342872E6340049D122 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B0E1332872E6340049D122 /* Location.swift */; };
@@ -22,9 +22,9 @@
 /* Begin PBXFileReference section */
 		A249A1BF2876E3CD00DC0F9C /* LocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
 		A249A1C128773C7800DC0F9C /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
+		A249A1C3287B0D0E00DC0F9C /* LocationMapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapAnnotationView.swift; sourceTree = "<group>"; };
 		A2B0E11D2872E48C0049D122 /* MapAppBootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapAppBootcamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2B0E1202872E48C0049D122 /* MapAppBootcampApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAppBootcampApp.swift; sourceTree = "<group>"; };
-		A2B0E1222872E48C0049D122 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A2B0E1272872E48E0049D122 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A2B0E12E2872E5330049D122 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2B0E1332872E6340049D122 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
@@ -64,7 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				A2B0E1202872E48C0049D122 /* MapAppBootcampApp.swift */,
-				A2B0E1222872E48C0049D122 /* ContentView.swift */,
 				A2B0E1352872E6FF0049D122 /* DataServices */,
 				A2B0E1312872E5FD0049D122 /* Views */,
 				A2B0E1322872E6040049D122 /* ViewModels */,
@@ -97,6 +96,7 @@
 				A2B0E1382873104B0049D122 /* LocationsView.swift */,
 				A249A1BF2876E3CD00DC0F9C /* LocationsListView.swift */,
 				A249A1C128773C7800DC0F9C /* LocationPreviewView.swift */,
+				A249A1C3287B0D0E00DC0F9C /* LocationMapAnnotationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,10 +191,10 @@
 				A249A1C02876E3CD00DC0F9C /* LocationsListView.swift in Sources */,
 				A249A1C228773C7800DC0F9C /* LocationPreviewView.swift in Sources */,
 				A2B0E13B287313180049D122 /* LocationsViewModel.swift in Sources */,
-				A2B0E1232872E48C0049D122 /* ContentView.swift in Sources */,
 				A2B0E1392873104B0049D122 /* LocationsView.swift in Sources */,
 				A2B0E1342872E6340049D122 /* Location.swift in Sources */,
 				A2B0E1212872E48C0049D122 /* MapAppBootcampApp.swift in Sources */,
+				A249A1C4287B0D0E00DC0F9C /* LocationMapAnnotationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
