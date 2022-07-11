@@ -10,9 +10,13 @@ import MapKit
 
 struct LocationsView: View {
     
+    // MARK: PROPERTIES
+    
     @EnvironmentObject private var vm: LocationsViewModel
     let maxWidthForIpad: CGFloat = 700
     
+    // MARK: BODY
+
     var body: some View {
         ZStack {
             mapLayer
@@ -31,12 +35,16 @@ struct LocationsView: View {
     }
 }
 
+// MARK: PREVIEW
+
 struct LocationView_Previews: PreviewProvider {
     static var previews: some View {
         LocationsView()
             .environmentObject(LocationsViewModel())
     }
 }
+
+// MARK: EXTENSIONS
 
 extension LocationsView {
     private var header: some View {

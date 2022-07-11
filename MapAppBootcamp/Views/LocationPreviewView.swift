@@ -9,9 +9,13 @@ import SwiftUI
 
 struct LocationPreviewView: View {
     
+    // MARK: PROPERTIES
+
     @EnvironmentObject private var vm: LocationsViewModel
     let location: Location
     
+    // MARK: BODY
+
     var body: some View {
         HStack(alignment: .bottom, spacing: 0.0) {
             VStack(alignment: .leading, spacing: 16.0) {
@@ -33,6 +37,7 @@ struct LocationPreviewView: View {
     }
 }
 
+// MARK: PREVIEW
 
 struct LocationPreviewView_Previews: PreviewProvider {
     static var previews: some View {
@@ -44,6 +49,8 @@ struct LocationPreviewView_Previews: PreviewProvider {
         .environmentObject(LocationsViewModel())
     }
 }
+
+// MARK: EXTENSIONS
 
 extension LocationPreviewView {
     private var imageSection: some View {
@@ -60,9 +67,7 @@ extension LocationPreviewView {
         .background(.white)
         .cornerRadius(10)
     }
-}
 
-extension LocationPreviewView {
     private var titleSection: some View {
         VStack(alignment: .leading, spacing: 4) {
             Text(location.name)

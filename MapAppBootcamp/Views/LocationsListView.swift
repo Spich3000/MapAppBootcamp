@@ -9,8 +9,12 @@ import SwiftUI
 
 struct LocationsListView: View {
     
+    // MARK: PROPERTIES
+
     @EnvironmentObject private var vm: LocationsViewModel
     
+    // MARK: BODY
+
     var body: some View {
         List {
             ForEach(vm.locations) { location in
@@ -26,12 +30,16 @@ struct LocationsListView: View {
     }
 }
 
+// MARK: PREVIEW
+
 struct LocationsListView_Previews: PreviewProvider {
     static var previews: some View {
         LocationsListView()
             .environmentObject(LocationsViewModel())
     }
 }
+
+// MARK: EXTENSIONS
 
 extension LocationsListView {
     private func listRowView(location: Location) -> some View{

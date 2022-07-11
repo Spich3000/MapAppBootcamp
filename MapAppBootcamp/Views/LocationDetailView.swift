@@ -10,9 +10,13 @@ import MapKit
 
 struct LocationDetailView: View {
     
+    // MARK: PROPERTIES
+    
     @EnvironmentObject private var vm: LocationsViewModel
     let location: Location
     
+    // MARK: BODY
+
     var body: some View {
         ScrollView {
             VStack {
@@ -36,6 +40,7 @@ struct LocationDetailView: View {
     }
 }
 
+// MARK: PREVIEW
 
 struct LocationDetailView_Previews: PreviewProvider {
     static var previews: some View {
@@ -43,6 +48,8 @@ struct LocationDetailView_Previews: PreviewProvider {
             .environmentObject(LocationsViewModel())
     }
 }
+
+// MARK: EXTENSIONS
 
 extension LocationDetailView {
     private var imageSection: some View {
